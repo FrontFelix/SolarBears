@@ -14,3 +14,17 @@ $(document).ready(function () {
         })
     })
 })
+
+
+
+window.addEventListener('scroll', function() {
+    console.log(this.scrollY)
+    let value = this.scrollY * 1
+    let moveText = document.getElementById('movingText')
+    moveText.style.top = value + "px"
+    if(this.scrollY > 370) {
+        $('#movingText').fadeOut("fast", function(){})
+    }else if(this.scrollY < 370) {
+        $('#movingText').fadeIn("fast", function(){})
+    }
+})

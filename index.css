@@ -37,3 +37,25 @@ body {
     right: 0;
     top: 0;
 }
+
+#big-logo {
+    overflow-y: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 200px;
+    height: 600px;
+}
+
+#big-logo h1 {
+    position: absolute;
+    font-size: 80px;
+}
+
+.max-width {
+    max-width: 1200px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
