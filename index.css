@@ -5,23 +5,25 @@ body {
 }
 
 .top {
+    position: relative;
     width: 100%;
     background-image: url('./images/test.svg');
-    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 119vh;
 }
 
 .max-width {
     display: block;
     margin: 0 auto;
-    max-width: 1000px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
-.test {
+.about {
+    position: relative;
     background-image: linear-gradient(#08366B, #041B36);
-    height: 100vh;
+    min-height: 130vh;
 }
 
 .dropdown {
@@ -29,6 +31,7 @@ body {
 }
 
 .sidebar {
+    z-index: 100;
     background-color: #69CDEA;
     width: 80%;
     max-width: 300px;
@@ -36,4 +39,35 @@ body {
     position: fixed;
     right: 0;
     top: 0;
+}
+
+.headline-text {
+    font-size: 30px;
+}
+
+#big-logo {
+    z-index: 1;
+    padding-top: 70px;
+    font-size: 70px;
+}
+
+@media (min-width: 1280px) {
+    #big-logo {
+        padding-top: 0px !important;
+        font-size: 90px;
+    }
+    .bub {
+        width: 10%;
+        position: absolute;
+        top: 180px;
+    }
+    .bub-left {
+        left: 20px;
+    }
+    .bub-right {
+        right: 20px;
+    }
+    .headline-text {
+        font-size: 50px;
+    }
 }

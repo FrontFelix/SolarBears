@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,78 +8,117 @@
     <title>Solar Bears</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-        <!--JQUERY-->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!--JQUERY-->
     <script defer src="./navbar.js"></script>
 </head>
+
 <body>
     <div class="top">
         <div class="max-width">
-                <!--NAVBAR-->
-    <header class="navbar mb-20 text-white">
-        <div class="nav-content flex py-4 justify-between large-max px-6 xl:px-0 xl:pt-12">
-            <div class="nav-left">
-                <img class="hidden xl:block" src="./images/Icon.png" alt="LOGO">
-                <h1 class="text-xl xl:hidden">Solar Bear</h1>
-            </div>
-            <div class="nav-center hidden xl:flex justify-around text-xl">
-                <div class="link">
-                    <a class="mx-6" href="./about.html">About us</a>
-                </div>
-                <div class="link">
-                    <a class="mx-6" href="./contact.html">Roadmap</a>
-                </div>
-                <div class="link">
-                </div>
-                <div class="link">
-                    <a class="mx-6" href="">Team</a>
-                </div>
-                <div class="link">
-                    <a class="mx-6" href="">Faq</a>
-                </div>
-            </div>
-            <div class="nav-right hidden self-center xl:flex">
-                <a class="mx-2 text-xl" href=""><i class="fab fa-discord"></i></a>
-                <a class="mx-2 text-xl" href=""><i class="fab fa-twitter"></i></a>
-            </div>
-            <!--NAV-MOBILE-RIGHT-SIDE-->
-            <div class="nav-mobile block xl:hidden self-center">
-                <button class="float-right hamburger"><i class="fas fa-bars self-center"></i></button>
-                <div class="sidebar p-4 text-white text-xl">
-                    <button class="float-right close p-2"><i class="fas fa-times text-xl"></i></button>
-                    <!--SIDEBAR BUTTONS-->
-                    <div class="link pb-4 pt-40">
-                        <button class="mx-6" href="">About us</button>
+            <!--NAVBAR-->
+            <header class="navbar text-white">
+                <div class="nav-content flex pt-4 pb-4 justify-between large-max px-6 xl:px-0 xl:pt-12">
+                    <div class="nav-left">
+                        <img class="hidden xl:block" src="./images/Icon.png" alt="LOGO">
+                        <h1 class="text-xl xl:hidden">Solar Bear</h1>
                     </div>
-                    <div class="link py-4">
-                        <button class="mx-6" href="">Roadmap</button>
+                    <div class="nav-center hidden xl:flex justify-around text-xl">
+                        <div class="link">
+                            <a class="mx-6" href="./about.html">About us</a>
+                        </div>
+                        <div class="link">
+                            <a class="mx-6" href="./contact.html">Roadmap</a>
+                        </div>
+                        <div class="link">
+                        </div>
+                        <div class="link">
+                            <a class="mx-6" href="">Team</a>
+                        </div>
+                        <div class="link">
+                            <a class="mx-6" href="">Faq</a>
+                        </div>
                     </div>
-                    <div class="link py-4">
-                        <button class="mx-6" href="">Team</button>
+                    <div class="nav-right hidden self-center xl:flex">
+                        <a class="mx-2 text-xl" href=""><i class="fab fa-discord"></i></a>
+                        <a class="mx-2 text-xl" href=""><i class="fab fa-twitter"></i></a>
                     </div>
-                    <div class="link py-4">
-                        <button class="mx-6" href="">Faq</button>
+                    <!--NAV-MOBILE-RIGHT-SIDE-->
+                    <div class="nav-mobile block xl:hidden self-center">
+                        <button class="float-right hamburger"><i class="fas fa-bars self-center"></i></button>
+                        <div class="sidebar p-4 text-white text-xl">
+                            <button class="float-right close p-2"><i class="fas fa-times text-xl"></i></button>
+                            <!--SIDEBAR BUTTONS-->
+                            <div class="link pb-4 pt-40">
+                                <button class="mx-6" href="">About us</button>
+                            </div>
+                            <div class="link py-4">
+                                <button class="mx-6" href="">Roadmap</button>
+                            </div>
+                            <div class="link py-4">
+                                <button class="mx-6" href="">Team</button>
+                            </div>
+                            <div class="link py-4">
+                                <button class="mx-6" href="">Faq</button>
+                            </div>
+                            <div class="link py-4">
+                                <a class="mx-6" href=""><i class="fab fa-discord"></i></a>
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                            </div>
+                            <!--SIDEBAR BUTTONS-->
+                        </div>
                     </div>
-                    <div class="link py-4">
-                        <a class="mx-6" href=""><i class="fab fa-discord"></i></a>
-                        <a href=""><i class="fab fa-twitter"></i></a>
-                    </div>
-                    <!--SIDEBAR BUTTONS-->
+                    <!--NAV-MOBILE-RIGHT-SIDE-->
                 </div>
-            </div>
-            <!--NAV-MOBILE-RIGHT-SIDE-->
-        </div>
-    </header>
-    <!--NAVBAR-->
-    <img class="px-16 xl:px-0 mx-auto logo-big" src="./images/Solar_Bear_NFT.png" alt="">
+            </header>
+            <!--NAVBAR-->
+            <h1 id="big-logo" class="text-center">Solar Bears</h1>
         </div>
     </div>
-    <div class="test ">
-        <img src="./images/Files/Image_14@2x.png" alt="">
+    <div class="about">
+        <img class="bub-left bub hidden xl:block" src="./images/bub-left.svg" alt="">
+        <img class="bub bub-right hidden xl:block" src="./images/bub-right.svg" alt="">
+        <h1 class="text-center headline-text pt-32 text-white font-bold">WHAT IS SOLAR BEARS</h1>
+        <p class="text-center text-white xl:w-1/4 xl:text-xl xl:block xl:mx-auto">Lorem ipsum dolor sit amet,
+            consectetur
+            adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore.</p>
+            <div class="main-carousel xl:mx-64 mt-20">
+                <div class="carousel-cell w-1/3 xl:w-1/6 mx-2"><img src="./images/Files/Image_4.png" alt=""></div>
+                <div class="carousel-cell w-1/3 xl:w-1/6 mx-2"><img src="./images/Files/Image_4.png" alt=""></div>
+                <div class="carousel-cell w-1/3 xl:w-1/6 mx-2"><img src="./images/Files/Image_4.png" alt=""></div>
+                <div class="carousel-cell w-1/3 xl:w-1/6 mx-2"><img src="./images/Files/Image_4.png" alt=""></div>
+                <div class="carousel-cell w-1/3 xl:w-1/6 mx-2"><img src="./images/Files/Image_4.png" alt=""></div>
+                <div class="carousel-cell w-1/3 xl:w-1/6 mx-2"><img src="./images/Files/Image_4.png" alt=""></div>
+                <div class="carousel-cell w-1/3 xl:w-1/6 mx-2"><img src="./images/Files/Image_4.png" alt=""></div>
+                <div class="carousel-cell w-1/3 xl:w-1/6 mx-2"><img src="./images/Files/Image_4.png" alt=""></div>
+                <div class="carousel-cell w-1/3 xl:w-1/6 mx-2"><img src="./images/Files/Image_4.png" alt=""></div>
+                <div class="carousel-cell w-1/3 xl:w-1/6 mx-2"><img src="./images/Files/Image_4.png" alt=""></div>
+              </div>
     </div>
 </body>
+
+<script>
+    var elem = document.querySelector('.main-carousel');
+var flkty = new Flickity( elem, {
+  // options
+  cellAlign: 'center',
+  autoPlay: true,
+  groupCells: true
+});
+
+// element argument can be a selector string
+//   for an individual element
+var flkty = new Flickity( '.main-carousel', {
+  // options
+});
+</script>
+
 </html>
