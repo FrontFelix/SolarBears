@@ -10,13 +10,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 
     <!--JQUERY-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!--JQUERY-->
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script defer src="./navbar.js"></script>
 </head>
 
@@ -77,62 +80,69 @@
                     </div>
                     <!--NAV-MOBILE-RIGHT-SIDE-->
                 </div>
-<<<<<<< HEAD
-            </div>
-            <!--NAV-MOBILE-RIGHT-SIDE-->
-        </div>
-    </header>
-    <!--NAVBAR-->
-    <div id="big-logo">
-        <h1 id="movingText" class="text-center text-white">Test</h1>
-    </div>
-        </div>
-    </div>
-    <div class="test">
-=======
             </header>
             <!--NAVBAR-->
-            <h1 id="big-logo" class="text-center">Solar Bears</h1>
+            <h1 id="big-logo" class="text-center text-white font-bold">Solar Bears</h1>
+            <button id="big-button" class="mx-auto px-6 py-2 text-2xl text-white font-bold">Collect Now</button>
         </div>
     </div>
-    <div class="about">
+    <div class="about xl:pt-32">
         <img class="bub-left bub hidden xl:block" src="./images/bub-left.svg" alt="">
         <img class="bub bub-right hidden xl:block" src="./images/bub-right.svg" alt="">
         <h1 class="text-center headline-text pt-32 text-white font-bold">WHAT IS SOLAR BEARS</h1>
         <p class="text-center text-white xl:w-1/4 xl:text-xl xl:block xl:mx-auto">Lorem ipsum dolor sit amet,
-            consectetur
-            adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore.</p>
-            <div class="main-carousel xl:mx-64 mt-20">
-                <div class="carousel-cell w-1/3 xl:w-1/6 mx-2"><img src="./images/Files/Image_4.png" alt=""></div>
-                <div class="carousel-cell w-1/3 xl:w-1/6 mx-2"><img src="./images/Files/Image_4.png" alt=""></div>
-                <div class="carousel-cell w-1/3 xl:w-1/6 mx-2"><img src="./images/Files/Image_4.png" alt=""></div>
-                <div class="carousel-cell w-1/3 xl:w-1/6 mx-2"><img src="./images/Files/Image_4.png" alt=""></div>
-                <div class="carousel-cell w-1/3 xl:w-1/6 mx-2"><img src="./images/Files/Image_4.png" alt=""></div>
-                <div class="carousel-cell w-1/3 xl:w-1/6 mx-2"><img src="./images/Files/Image_4.png" alt=""></div>
-                <div class="carousel-cell w-1/3 xl:w-1/6 mx-2"><img src="./images/Files/Image_4.png" alt=""></div>
-                <div class="carousel-cell w-1/3 xl:w-1/6 mx-2"><img src="./images/Files/Image_4.png" alt=""></div>
-                <div class="carousel-cell w-1/3 xl:w-1/6 mx-2"><img src="./images/Files/Image_4.png" alt=""></div>
-                <div class="carousel-cell w-1/3 xl:w-1/6 mx-2"><img src="./images/Files/Image_4.png" alt=""></div>
-              </div>
->>>>>>> 8fee18ad7301cf930f7deaaed47a36687fa43abc
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        <div class="your-class mx-12 mt-64">
+            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/Files/Image_4.png" alt=""></div>
+            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/Files/Image_4.png" alt=""></div>
+            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/Files/Image_4.png" alt=""></div>
+            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/Files/Image_4.png" alt=""></div>
+            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/Files/Image_4.png" alt=""></div>
+            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/Files/Image_4.png" alt=""></div>
+            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/Files/Image_4.png" alt=""></div>
+            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/Files/Image_4.png" alt=""></div>
+            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/Files/Image_4.png" alt=""></div>
+            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/Files/Image_4.png" alt=""></div>
+        </div>
+    </div>
+    <div class="start_journey py-20">
+        <div class="journey">
+            <div class="roadmap flex flex-col xl:flex-row xl:justify-around px-52">
+                <div class="road flex flex-col">
+                    <img class="flex-grow pt-36 pl-5" src="./images/ice-float.svg" alt="">
+                </div>
+                <div class="road flex flex-col">
+                    <img class="flex-grow pt-36 pl-5" src="./images/ice-float.svg" alt="">
+                </div>
+                <div class="road flex flex-col">
+                    <img class="flex-grow pt-36 pl-5" src="./images/ice-float.svg" alt="">
+                </div>
+                <div class="road flex flex-col">
+                    <img class="flex-grow pt-36 pl-5" src="./images/ice-float.svg" alt="">
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
-<script>
-    var elem = document.querySelector('.main-carousel');
-var flkty = new Flickity( elem, {
-  // options
-  cellAlign: 'center',
-  autoPlay: true,
-  groupCells: true
-});
 
-// element argument can be a selector string
-//   for an individual element
-var flkty = new Flickity( '.main-carousel', {
-  // options
-});
+<script>
+    $(document).ready(function () {
+        $('.your-class').slick({
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 3,
+            centerMode: true,
+            centerPadding: false,
+        });
+        $(".slick-current img").addClass('bigger-img');
+    });
+
+    $('.your-class').on('afterChange', function(event, slick, currentSlide, nextSlide){
+      $(".slick-slide").removeClass('bigger-img');
+      $('.slick-current').addClass('bigger-img');        
+   });
 </script>
+
 
 </html>

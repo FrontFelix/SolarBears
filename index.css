@@ -2,12 +2,13 @@
 /*LIGHT BLUE #69CDEA*/
 
 body {
+    background-image: linear-gradient(#08366B, #041B36);
 }
 
 .top {
     position: relative;
     width: 100%;
-    background-image: url('./images/test.svg');
+    background-image: url('./images/Top_Background.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,7 +23,7 @@ body {
 }
 .about {
     position: relative;
-    background-image: linear-gradient(#08366B, #041B36);
+
     min-height: 130vh;
 }
 
@@ -41,28 +42,18 @@ body {
     top: 0;
 }
 
-<<<<<<< HEAD
-#big-logo {
-    overflow-y: hidden;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    width: 200px;
-    height: 600px;
-}
-
-#big-logo h1 {
-    position: absolute;
-    font-size: 80px;
-}
-
-.max-width {
-    max-width: 1200px;
+#big-button {
+    background-color: #69CDEA;
     display: block;
-    position: relative;
-    margin: 0 auto;
-=======
+    border-radius: 40px;
+    box-shadow: 1px 4px lightblue;
+}
+
+#big-button:hover {
+    transition: 0.1s;
+    transform: scale(1.03) !important;
+}
+
 .headline-text {
     font-size: 30px;
 }
@@ -73,10 +64,54 @@ body {
     font-size: 70px;
 }
 
+.animation-text {
+    animation: normal;
+    animation-name: textOpacity;
+    animation-duration: 1;
+}
+.large-glide {
+    width: 90%;
+}
+
+.large-glide img {
+    width: 300px;
+}
+
+
+.start_journey {
+    min-height: 90vh;
+    position: relative;
+    width: 100%;
+    background-image: url('./images/Vector.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position-y: 10px;
+    background-size: cover;
+}
+.journey {
+    position: relative;
+    width: 100%;
+    background-image: url('./images/Vector2.svg');
+    min-height: 108.5vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.road {
+    height: 200px;
+    width: 300px;
+    position: relative;
+    background-image: url('./images/light.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
 @media (min-width: 1280px) {
     #big-logo {
-        padding-top: 0px !important;
-        font-size: 90px;
+        padding-top: 50px !important;
+        font-size: 120px;
     }
     .bub {
         width: 10%;
@@ -92,5 +127,48 @@ body {
     .headline-text {
         font-size: 50px;
     }
->>>>>>> 8fee18ad7301cf930f7deaaed47a36687fa43abc
+    .roadmap {
+        padding-top: 400px;
+    }
+}
+
+.bigger-img {
+    transform: scale(1.2);
+}
+
+
+@keyframes textOpacity {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: 0.9;
+    }
+    20% {
+        opacity: 0.8;
+    }
+    30% {
+        opacity: 0.7;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    60% {
+        opacity: 0.4;
+    }
+    70% {
+        opacity: 0.3;
+    }
+    80% {
+        opacity: 0.1;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
 }
