@@ -4,9 +4,9 @@ $(window).on("scroll", function(){
     var transY = scrollPos / 2;
    // console.log(scrollPos)
     $('#big-logo').css({transform: 'translateY(' + transY +'px)'});
-    $("#big-logo").css({ "opacity" : 1 - ((scrollPos + transY) / 700) })
+    $("#big-logo").css({ "opacity" : 1 - ((scrollPos + transY) / 500) })
     $('#big-button').css({transform: 'translateY(' + transY +'px)'});
-    $("#big-button").css({ "opacity" : 1 - ((scrollPos + transY) / 700) })    
+    $("#big-button").css({ "opacity" : 1 - ((scrollPos + transY) / 500) })    
 });
 
 $(document).ready(function () {
