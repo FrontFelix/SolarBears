@@ -1,6 +1,58 @@
 /*LINEAR from - #08366B to - #041B36*/
 /*LIGHT BLUE #69CDEA*/
 
+
+@font-face {
+    font-family: 'gothambook';
+    src: url('./Gotham-Font/GothamBook.ttf') format('woff2'),
+         url('./Gotham-Font/GothamBook.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothambold';
+    src: url('./Gotham-Font/GothamBold.ttf') format('woff2'),
+         url('./Gotham-Font/GothamBold.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothamlight';
+    src: url('./Gotham-Font/GothamLight.ttf') format('woff2'),
+         url('./Gotham-Font/GothamLight.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'gothammedium';
+    src: url('./Gotham-Font/GothamMedium.ttf') format('woff2'),
+         url('./Gotham-Font/GothamMedium.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.ff-book {
+    font-family: 'gothambook' !important;
+}
+.ff-bold {
+    font-family: 'gothambold' !important;
+}
+
+.ff-light {
+    font-family: 'gothamlight' !important;
+}
+
+.ff-medium {
+    font-family: 'gothammedium' !important;
+}
+
 body {
     background-image: linear-gradient(#08366B, #041B36);
 }
@@ -15,16 +67,37 @@ body {
     min-height: 119vh;
 }
 
+
+.faq-inner {
+    position: relative;
+    background-image: url('./images/faq.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+
+.member {
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.member:hover {
+    transform: scale(1.05);
+    background-color: #102f54;
+}
+
 .max-width {
     display: block;
     margin: 0 auto;
     padding-left: 50px;
     padding-right: 50px;
 }
+
 .about {
     position: relative;
 
-    min-height: 130vh;
+    min-height: 10vh;
 }
 
 .dropdown {
@@ -69,6 +142,7 @@ body {
     animation-name: textOpacity;
     animation-duration: 1;
 }
+
 .large-glide {
     width: 90%;
 }
@@ -77,22 +151,67 @@ body {
     width: 300px;
 }
 
+.show {
+    transition: 0.2s;
+    display: block !important;
+}
+
+.inner-footer {
+    background-color: #03152B;
+}
+
+.big-footer i {
+    background-color: white;
+    border-radius: 50%;
+    color: #042041 !important; 
+}
+
+
+.slick-dots {
+    display: none !important;
+}
+
+
+
+.op-bub-left {
+    opacity: 0.1;
+}
+.op-bub-right {
+    opacity: 0.1;
+}
+
 
 .start_journey {
-    min-height: 90vh;
+    z-index: 100;
+    min-height: 110vh;
     position: relative;
-    width: 100%;
-    background-image: url('./images/Vector.svg');
+    min-width: 100%;
+    background-image: url('./images/1920px.svg');
     background-position: center;
     background-repeat: no-repeat;
-    background-position-y: 10px;
+    background-position-y: -2px;
     background-size: cover;
 }
+
+
+@media (min-width: 2000px) {
+    .start_journey {
+        background-position-y: 4px;
+        background-image: url('./images/3840px.svg');
+    }
+}
+@media (min-width: 2300px) {
+    .start_journey {
+        background-position-y: 4px;
+        background-image: none
+    }
+}
+
 .journey {
+    z-index: 1;
     position: relative;
     width: 100%;
-    background-image: url('./images/Vector2.svg');
-    min-height: 108.5vh;
+    background-image: url('./images/vcbg.svg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -108,11 +227,89 @@ body {
     background-size: cover;
 }
 
+.faq-question {
+    width: 80%;
+    background-color: #1d5396;
+}
+
+.checkbox {
+    border-radius: 80%;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 2px 2px gray;
+}
+.checkbox button {
+    -webkit-appearance: none;
+    border: none !important;
+    top: 5px;
+    position: absolute;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+.checkbox input::after {
+    border: none !important;
+}
+
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none !important;
+}
+
+.button-color {
+    background-color: #69CDEA;
+    box-shadow: 2px 2px #2D99B8;
+}
+
+
+.faq-inner {
+    max-width: 1800px;
+}
+
+
+
 
 @media (min-width: 1280px) {
-    .team {
-        min-height: 100vh;
+
+
+    .phase2 {
+        margin-top: -1px;
     }
+
+    .phase3 {
+        margin-top: -15px;
+    }
+
+    .whataresolar {
+        font-size: 100px !important;
+    }
+
+    .about {
+        position: relative;
+    
+        min-height: 130vh;
+    }
+    
+    .faq-inner {
+        position: relative;
+        background-image: url('./images/faq.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 900px;
+    }
+
+    .team {
+        position: relative;
+    }
+
     .road {
         height: 200px;
         width: 300px;
@@ -122,29 +319,47 @@ body {
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     #big-logo {
         padding-top: 20px !important;
         font-size: 120px;
     }
+
     .bub {
         width: 10%;
         position: absolute;
         top: 180px;
     }
+
+    .bub1 {
+        width: 14%;
+        position: absolute;
+        top: 180px;
+    }
+
     .bub-left {
         left: 20px;
     }
+
     .bub-right {
         right: 20px;
     }
+
     .headline-text {
         font-size: 50px;
     }
+
     .roadmap {
+        padding-top: 20px;
+    }
+}
+
+@media (min-width: 1480px) {
+    .roadmap {
+        padding-top: 100px;
     }
 }
 
 .bigger-img {
     transform: scale(1.2);
 }
-

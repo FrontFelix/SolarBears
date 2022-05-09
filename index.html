@@ -17,17 +17,17 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!--JQUERY-->
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script defer src="./navbar.js"></script>
+    <script defer src="./index.js"></script>
 </head>
 
 <body>
-    <div class="top">
+    <div id="top" class="top">
         <div class="max-width">
             <!--NAVBAR-->
-            <header class="navbar text-white">
+            <header class="navbar text-white ff-book">
                 <div class="nav-content flex pt-4 pb-4 justify-between large-max px-6 xl:px-0 xl:pt-12">
                     <div class="nav-left">
                         <img class="hidden xl:block" src="./images/Icon.png" alt="LOGO">
@@ -35,45 +35,45 @@
                     </div>
                     <div class="nav-center hidden xl:flex justify-around text-xl">
                         <div class="link">
-                            <a class="mx-6" href="./about.html">About us</a>
+                            <button class="mx-6" onclick="aboutClick()">About us</button>
                         </div>
                         <div class="link">
-                            <a class="mx-6" href="./contact.html">Roadmap</a>
+                            <button class="mx-6" onclick="roadClick()">Roadmap</button>
                         </div>
                         <div class="link">
                         </div>
                         <div class="link">
-                            <a class="mx-6" href="">Team</a>
+                            <button class="mx-6" onclick="teamClick()">Team</button>
                         </div>
                         <div class="link">
-                            <a class="mx-6" href="">Faq</a>
+                            <button class="mx-6" onclick="faqClick()">Faq</button>
                         </div>
                     </div>
                     <div class="nav-right hidden self-center xl:flex">
-                        <a class="mx-2 text-xl" href=""><i class="fab fa-discord"></i></a>
-                        <a class="mx-2 text-xl" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="mx-2 text-xl" href="https://discord.gg/7SwDnaHzZB"><i class="fab fa-discord"></i></a>
+                        <a class="mx-2 text-xl" href="https://twitter.com/solarbearsclub?s=21"><i class="fab fa-twitter"></i></a>
                     </div>
                     <!--NAV-MOBILE-RIGHT-SIDE-->
                     <div class="nav-mobile block xl:hidden self-center">
-                        <button class="float-right hamburger"><i class="fas fa-bars self-center"></i></button>
+                        <button id="hamburger" class="float-right hamburger"><i class="fas fa-bars self-center"></i></button>
                         <div class="sidebar p-4 text-white text-xl">
-                            <button class="float-right close p-2"><i class="fas fa-times text-xl"></i></button>
+                            <button id="close" class="float-right close p-2"><i class="fas fa-times text-xl"></i></button>
                             <!--SIDEBAR BUTTONS-->
                             <div class="link pb-4 pt-40">
-                                <button class="mx-6" href="">About us</button>
+                                <button onclick="aboutClick()" class="mx-6" href="">About us</button>
                             </div>
                             <div class="link py-4">
-                                <button class="mx-6" href="">Roadmap</button>
+                                <button onclick="roadClick()" class="mx-6" href="">Roadmap</button>
                             </div>
                             <div class="link py-4">
-                                <button class="mx-6" href="">Team</button>
+                                <button onclick="teamClick()" class="mx-6" href="">Team</button>
                             </div>
                             <div class="link py-4">
-                                <button class="mx-6" href="">Faq</button>
+                                <button onclick="faqClick()" class="mx-6" href="">Faq</button>
                             </div>
                             <div class="link py-4">
-                                <a class="mx-6" href=""><i class="fab fa-discord"></i></a>
-                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a class="mx-6" href="https://discord.gg/7SwDnaHzZB"><i class="fab fa-discord"></i></a>
+                                <a href="https://twitter.com/solarbearsclub?s=21"><i class="fab fa-twitter"></i></a>
                             </div>
                             <!--SIDEBAR BUTTONS-->
                         </div>
@@ -86,73 +86,220 @@
             <button id="big-button" class="mx-auto px-6 py-2 text-2xl text-white font-bold">Collect Now</button>
         </div>
     </div>
-    <div class="about xl:pt-32 xl:mb-20">
-        <img class="bub-left bub hidden xl:block" src="./images/bub-left.svg" alt="">
-        <img class="bub bub-right hidden xl:block" src="./images/bub-right.svg" alt="">
-        <h1 class="text-center headline-text pt-32 text-white font-bold">WHAT IS SOLAR BEARS</h1>
-        <p class="text-center text-white xl:w-1/4 xl:text-xl xl:block xl:mx-auto">Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-        <div class="your-class mx-12 mt-52">
-            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/Files/Image_4.png" alt=""></div>
-            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/Files/Image_4.png" alt=""></div>
-            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/Files/Image_4.png" alt=""></div>
-            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/Files/Image_4.png" alt=""></div>
-            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/Files/Image_4.png" alt=""></div>
-            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/Files/Image_4.png" alt=""></div>
-            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/Files/Image_4.png" alt=""></div>
-            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/Files/Image_4.png" alt=""></div>
-            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/Files/Image_4.png" alt=""></div>
-            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/Files/Image_4.png" alt=""></div>
+    <div id="about" class="about xl:pt-32 xl:mb-20 lg:mb-40">
+        <img class="bub-left bub op-bub-left hidden xl:block" src="./images/bub-left.svg" alt="">
+        <img class="bub bub-right op-bub-right hidden xl:block" src="./images/bub-right.svg" alt="">
+        <h1 class="whataresolar text-center headline-text pt-32 text-white ff-bold font-bold">WHAT IS SOLAR BEARS</h1>
+        <p class="text-center text-white xl:w-7/12 xl:text-3xl xl:block xl:mx-auto ff-light w-1/2 mx-auto">Solar bears is a community driven NFT project based on the solana
+            block chain, aimed to rescue polar bears and build a tight knitted community to benefit all holders</p>
+        <div class="slider mx-12 mt-10 xl:mt-32">
+            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/showcase/Solar_Bears_FINAL-50.png" alt=""></div>
+            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/showcase/Solar_Bears_FINAL-46.png" alt=""></div>
+            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/showcase/Solar_Bears_FINAL-47.png" alt=""></div>
+            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/showcase/Solar_Bears_FINAL-51.png" alt=""></div>
+            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/showcase/Solar_Bears_FINAL_Eyes_7.png" alt=""></div>
+            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/showcase/Solar_Bears_FINAL-49.png" alt=""></div>
+            <div class="mx-4 w-1/5"><img class="mx-auto" src="./images/showcase/Solar_Bears_FINAL-48.png" alt=""></div>
+        </div>
+        <div class="arrows w-1/3 mx-auto flex justify-around mt-10 xl:px-36">
+            <button class="next"><i class="far fa-arrow-alt-circle-left text-2xl text-white"></i></button>
+            <button class="prev"><i class="far fa-arrow-alt-circle-right text-2xl text-white"></i></button>
+
         </div>
     </div>
-    <div class="start_journey py-20 xl:mt-56">
-        <div class="journey py-36">
-            <div class="roadmap flex flex-col xl:flex-row xl:justify-around xl:px-20 justify-center">
+    <div id="roadmap" class="start_journey py-20 xl:mt-40 ">
+        <div class="journey py-36 xl:py-64">
+            <h1 class="text-center headline-text ff-bold text-white pt-5 font-bold whataresolar">START YOUR JOURNEY</h1>
+            <div class="roadmap flex flex-col xl:flex-row xl:justify-around xl:px-20 justify-center text-white">
                 <div class="road flex flex-col mx-auto mt-12">
-                    <h1 class="text-center pt-2 text-xl">RoadMap</h1>
-                    <p class="xl:px-16 px-2 text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has </p>
-                    <img class="xl:pl-5" src="./images/ice-float.svg" alt="">
+                    <h1 class="text-center pt-2 text-xl ff-medium">Phase 1</h1>
+                    <p class="xl:px-10 text-center ff-book text-sm xl:text-base px-8 xl:px-2">Mint x amount of solar bears on x date and create a community DAO with holder verification.</p>
+                    <img class="xl:pl-5 xl:pt-2" src="./images/ice-float.svg" alt="">
                 </div>
                 <div class="road flex flex-col xl:mt-40 mx-auto mt-12">
-                    <h1 class="text-center pt-2 text-xl">RoadMap</h1>
-                    <p class="xl:px-16 px-2 text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has </p>
-                    <img class="xl:pl-5" src="./images/ice-float.svg" alt="">
+                    <h1 class="text-center pt-2 text-xl ff-medium">Phase 2</h1>
+                    <p class="xl:px-10 px-2 text-center ff-book text-sm xl:text-base">100% of royalties used for donations to polar bear rescuing foundations, giveaways, and sweeping floor.</p>
+                    <img class="xl:pl-5 phase2 " src="./images/ice-float.svg" alt="">
                 </div>
                 <div class="road flex flex-col mx-auto mt-12">
-                    <h1 class="text-center pt-2 text-xl">RoadMap</h1>
-                    <p class="xl:px-16 px-2 text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has </p>
-                    <img class="xl:pl-5" src="./images/ice-float.svg" alt="">
+                    <h1 class="text-center pt-2 text-xl ff-medium">Phase 3</h1>
+                    <p class="xl:px-16 px-8 xl:px-2 text-center ff-book text-sm xl:text-base">Reward holders with baby solar bear airdrops with utility voted by the DAO.</p>
+                    <img class="xl:pl-5 pt-8 phase3" src="./images/ice-float.svg" alt="">
                 </div>
                 <div class="road flex flex-col xl:mt-40 mx-auto mt-12">
-                    <h1 class="text-center pt-2 text-xl">RoadMap</h1>
-                    <p class="xl:px-16 px-2 text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has </p>
-                    <img class="xl:pl-5" src="./images/ice-float.svg" alt="">
+                    <h1 class="text-center pt-2 text-xl ff-medium">Phase 4</h1>
+                    <p class="xl:px-16 px-2 text-center ff-book">Coming soon..</p>
+                    <img class="xl:pl-5 pt-20 xl:pt-24" src="./images/ice-float.svg" alt="">
                 </div>
             </div>
         </div>
     </div>
-    <div class="team mt-20">
-
+    <div id="team" class="team pt-20 mb-20">
+        <h1 class="text-center headline-text text-white font-bold xl:pt-20 ff-bold">MEET THE TEAM</h1>
+        <img class="bub1 bub-left hidden xl:block" src="./images/team-bubs.svg" alt="">
+        <img class="bub1 bub-right hidden xl:block" src="./images/team-bubs-right.svg" alt="">
+        <div class="team-members xl:mx-64 flex flex-col xl:justify-center xl:flex-row xl:flex-wrap-reverse mx-12">
+            <div class="member p-3 xl:w-1/4 xl:mx-12 mt-4 xl:mt-8">
+                <img class="mx-auto md:w-1/2 xl:w-full" src="./images/team/Asset_3.png" alt="">
+                <h1 class="text-white text-xl xl:text-left text-center pt-4 ff-bold">Antoine</h1>
+                <p class="text-center xl:text-left text-gray-400 xl:text-sm ff-light">Developer</p>
+            </div>
+            <div class="member p-3 xl:w-1/4 xl:mx-12 mt-4 xl:mt-8">
+                <img class="mx-auto md:w-1/2 xl:w-full" src="./images/team/Asset_1.png" alt="">
+                <h1 class="text-white text-xl xl:text-left text-center pt-4 ff-bold">Cas</h1>
+                <p class="text-center xl:text-left text-gray-400 xl:text-sm ff-light">Marketer</p>
+            </div>
+            <div class="member p-3 xl:w-1/4 xl:mx-12 mt-4 xl:mt-8">
+                <img class="mx-auto md:w-1/2 xl:w-full" src="./images/team/Asset_2.png" alt="">
+                <h1 class="text-white text-xl xl:text-left text-center pt-4 ff-bold">Pydro</h1>
+                <p class="text-center xl:text-left text-gray-400 xl:text-sm ff-light">Animator</p>
+            </div>
+            <div class="member p-3 xl:w-1/4 xl:mx-12 mt-4 xl:mt-8 top-meb">
+                <img class="mx-auto md:w-1/2 xl:w-full" src="./images/team/Asset_4.png" alt="">
+                <h1 class="text-white text-xl xl:text-left text-center pt-4 ff-bold">Domma</h1>
+                <p class="text-center xl:text-left text-gray-400 xl:text-sm ff-light">Marketer</p>
+            </div>
+            <div class="member p-3 xl:w-1/4 xl:mx-12 mt-4 xl:mt-8 top-meb">
+                <img class="mx-auto md:w-1/2 xl:w-full" src="./images/team/Asset_5.png" alt="">
+                <h1 class="text-white text-xl xl:text-left text-center pt-4 ff-bold">YahiaShaker</h1>
+                <p class="text-center xl:text-left text-gray-400 xl:text-sm ff-light">Artist</p>
+            </div>
+        </div>
     </div>
+    <div id="faq" class="faq py-20">
+        <div class="faq-inner mx-auto xl:px-64 xl:pt-20">
+            <h1 class="text-center text-white headline-text xl:text-left pt-10 pb-3 xl:pt-0 ff-bold font-bold">Frequently Asked Questions</h1>
+            <div class="faq-question self-center my-4 py-8 px-4 rounded mx-auto xl:mx-0 xl:w-2/3">
+                <div class="faq-top flex">
+                    <div id="checkbox-1" class="checkbox flex justify-center">
+                        <i id="plus1" class="fas fa-plus mt-2"></i>
+                        <i id="minus1" class="fas fa-minus hidden mt-2 text-white"></i>
+                        <button id="faq-button-1"></button>
+                    </div>
+                    <h1 class="ml-8 mt-1 text-white text-xl ff-bold font-bold">What's the total supply?</h1>
+                </div>
+                <div class="text text-white py-4" id="faq-text-1">
+                    <p class="ml-16 ff-book">The total supply for solar bears is x.</p>
+                </div>
+            </div>
+            <div class="faq-question self-center my-4 py-8 px-4 rounded mx-auto xl:mx-0 xl:w-2/3">
+                <div class="faq-top flex">
+                    <div id="checkbox-2" class="checkbox flex justify-center">
+                        <i id="plus2" class="fas fa-plus mt-2"></i>
+                        <i id="minus2" class="fas fa-minus hidden mt-2 text-white"></i>
+                        <button id="faq-button-2"></button>
+                    </div>
+                    <h1 class="ml-8 text-white text-xl ff-bold font-bold">What's the minting cost?</h1>
+                </div>
+                <div class="text text-white py-4" id="faq-text-2">
+                    <p class="ml-16 ff-book">The minting cost is x SOL.</p>
+                </div>
+            </div>
+            <div class="faq-question self-center my-4 py-8 px-4 rounded mx-auto xl:mx-0 xl:w-2/3">
+                <div class="faq-top flex">
+                    <div id="checkbox-3" class="checkbox flex justify-center">
+                        <i id="plus3" class="fas fa-plus mt-2"></i>
+                        <i id="minus3" class="fas fa-minus hidden mt-2 text-white"></i>
+                        <button id="faq-button-3"></button>
+                    </div>
+                    <h1 class="ml-8 text-white text-xl ff-bold font-bold">When is the mint date?</h1>
+                </div>
+                <div class="text text-white py-4" id="faq-text-3">
+                    <p class="ml-16 ff-book">We will be launching the Solar Bears NFT Club on x.</p>
+                </div>
+            </div>
+            <div class="faq-question self-center my-4 py-8 px-4 rounded mx-auto xl:mx-0 xl:w-2/3">
+                <div class="faq-top flex">
+                    <div id="checkbox-4" class="checkbox flex justify-center">
+                        <i id="plus4" class="fas fa-plus mt-2"></i>
+                        <i id="minus4" class="fas fa-minus hidden mt-2 text-white"></i>
+                        <button id="faq-button-4"></button>
+                    </div>
+                    <h1 class="ml-8 text-white text-xl ff-bold font-bold">Will there be secondary markets?</h1>
+                </div>
+                <div class="text text-white py-4" id="faq-text-4">
+                    <p class="ml-16 ff-book">Yes, we're planning to list on Magic Eden after mint.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="inner-footer flex flex-wrap xl:flex-row xl:px-64 py-10 xl:py-16 text-white  xl:text-left mt-10 xl:mt-20">
+            <div class="xl:w-3/5 big-footer w-1/2 pl-10 md:pl-40">
+                <h1 class="ff-bold headline-text">Solar Bears</h1>
+                <p class="ff-book">Discover and collect amazing</p>
+                <p class="mb-2 xl:mb-8 ff-book">Solar Bear NFTS</p>
+                <a class="mx-auto xl:inline xl:mr-2" href="https://discord.gg/7SwDnaHzZB"><i class="fab fa-discord p-2"></i></a>
+                <a class="xl:inline xl:mx-2 my-2" href="https://twitter.com/solarbearsclub?s=21"><i class="fab fa-twitter p-2"></i></a>
+            </div>
+            <div class="xl:w-1/5 xl:pt-3 xl:mt-0 w-1/2 pl-10 mt-2">
+                <h1 class="ff-bold text-2xl text-center xl:text-left">Quick Links</h1>
+                <button onclick="topClick()" class="block mx-auto xl:mx-0 xl:mt-8 mt-4" href="">Home</button>
+                <button class="block mx-auto xl:mx-0 mt-2" onclick="aboutClick()">About Us</button>
+                <button class="block mx-auto xl:mx-0 mt-2" onclick="roadClick()">Roadmap</button>
+                <button class="block mx-auto xl:mx-0 mt-2" onclick="teamClick()">Team</button>
+                <button class="block mx-auto xl:mx-0 mt-2" onclick="faqClick()">FAQ</button>
+            </div>
+            <div class="xl:w-1/5 xl:pt-3 mt-16 xl:mt-0 w-full text-center xl:text-left">
+                <h1 class="ff-bold text-2xl">Contact</h1>
+                <div class="contact-flex flex xl:mt-8 self-center mt-5 w-1/3 xl:w-full mx-auto xl:mx-0">
+                    <i class="fas fa-map-marker-alt self-center md:pl-24 xl:pl-0"></i>
+                    <p class="ff-book pl-5 self-center">The North Pole</p>
+                </div>
+                <div class="contact-flex flex mt-2 self-center w-1/3 xl:w-full mx-auto xl:mx-0">
+                    <i class="fas fa-envelope self-center md:pl-20 xl:pl-0"></i>
+                    <p class="ff-book pl-5 self-center">solarbear@gmail.com</p>
+                </div>
+                <div class="contact-flex flex "></div>
+                <div class="contact-flex flex "></div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 
 <script>
     $(document).ready(function () {
-        $('.your-class').slick({
+        $('.slider').slick({
+            arrow: false,
             infinite: true,
+            speed: 300,
             slidesToShow: 5,
             slidesToScroll: 3,
             centerMode: true,
             centerPadding: false,
+            prevArrow: $('.prev'),
+            nextArrow: $('.next'),
+            responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 2
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
         });
-        $(".slick-current img").addClass('bigger-img');
     });
 
-    $('.your-class').on('afterChange', function(event, slick, currentSlide, nextSlide){
-      $(".slick-slide").removeClass('bigger-img');
-      $('.slick-current').addClass('bigger-img');        
-   });
+    $('.prev').click(function () {
+        $('.slider').slick('slickPrev');
+    })
+
+    $('.next').click(function () {
+        $('.slider').slick('slickNext');
+    })
 </script>
 
 
